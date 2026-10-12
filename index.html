@@ -213,7 +213,19 @@
     document.getElementById('btn-zh').setAttribute('aria-pressed', isZh ? 'true' : 'false');
     document.getElementById('btn-en').setAttribute('aria-pressed', isZh ? 'false' : 'true');
     document.documentElement.lang = isZh ? 'zh-CN' : 'en';
+    try{ localStorage.setItem('bdby-lang', l); }catch(e){}
   }
+  // 与 App 一致：首次访问按浏览器语言自动选择，非中文默认英文；手动切换后记住选择
+  (function(){
+    var saved = null;
+    try{ saved = localStorage.getItem('bdby-lang'); }catch(e){}
+    var l = (saved === 'zh' || saved === 'en') ? saved : null;
+    if(!l){
+      var nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      l = nav.indexOf('zh') === 0 ? 'zh' : 'en';
+    }
+    setLang(l);
+  })();
 </script>
 </body>
 </html>
