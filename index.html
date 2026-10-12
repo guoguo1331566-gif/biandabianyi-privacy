@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>边打边译 / TransBoard 隐私政策 · Privacy Policy</title>
+<meta name="description" content="边打边译（TransBoard）iOS 键盘与翻译 App 隐私政策：全部处理在本机完成，不收集、不上传任何信息。">
+<style>
+  :root{
+    --bg:#f5f5f7; --card:#ffffff; --ink:#1d1d1f; --muted:#6e6e73;
+    --line:#e5e5ea; --accent:#0a84ff; --accent-soft:#eaf4ff;
+    --warn:#b26a00; --warn-bg:#fff7e6;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,BlinkMacSystemFont,"SF Pro SC","PingFang SC","Segoe UI","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 72px}
+  header.top{
+    background:linear-gradient(180deg,#ffffff 0%,#fbfbfd 100%);
+    border:1px solid var(--line);border-radius:18px;padding:26px 24px;
+    box-shadow:0 1px 2px rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.04);
+  }
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12.5px;color:var(--accent);background:var(--accent-soft);
+    border-radius:999px;padding:4px 12px;margin-bottom:14px;font-weight:600;letter-spacing:.02em;
+  }
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block}
+  h1{font-size:26px;line-height:1.3;margin:0 0 8px;letter-spacing:-.01em}
+  .sub{color:var(--muted);font-size:14.5px;margin:0}
+  .lang{margin-top:18px;display:flex;gap:8px}
+  .lang button{
+    font:inherit;font-size:14px;font-weight:600;cursor:pointer;
+    border:1px solid var(--line);background:#fff;color:var(--muted);
+    padding:7px 16px;border-radius:999px;transition:.15s;
+  }
+  .lang button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  main{margin-top:22px}
+  section.doc{
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:26px 24px 30px;box-shadow:0 1px 2px rgba(0,0,0,.03);
+  }
+  section.doc[hidden]{display:none}
+  .meta{color:var(--muted);font-size:13.5px;margin:0 0 20px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+  h2{font-size:17px;margin:26px 0 8px;letter-spacing:-.005em}
+  h2:first-of-type{margin-top:6px}
+  p{margin:8px 0}
+  ul{margin:8px 0;padding-left:22px}
+  li{margin:5px 0}
+  .lead{font-size:16.5px}
+  .key{
+    background:var(--accent-soft);border-left:3px solid var(--accent);
+    border-radius:0 10px 10px 0;padding:12px 16px;margin:14px 0;
+  }
+  .fill{
+    display:inline-block;background:var(--warn-bg);color:var(--warn);
+    border-bottom:1px dashed var(--warn);border-radius:4px;
+    padding:0 6px;font-weight:600;
+  }
+  footer{margin-top:26px;text-align:center;color:var(--muted);font-size:12.5px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  @media (max-width:480px){
+    .wrap{padding:20px 14px 56px}
+    header.top,section.doc{padding:20px 16px;border-radius:14px}
+    h1{font-size:22px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <span class="badge"><span class="dot"></span>全部在本机完成 · Everything on-device</span>
+    <h1>边打边译 · TransBoard<br>隐私政策 / Privacy Policy</h1>
+    <p class="sub">适用于 iOS 主应用及其键盘扩展 · Applies to our iOS app and its keyboard extension</p>
+    <div class="lang" role="group" aria-label="Language">
+      <button id="btn-zh" aria-pressed="true" onclick="setLang('zh')">中文</button>
+      <button id="btn-en" aria-pressed="false" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== 中文 ==================== -->
+    <section class="doc" id="doc-zh">
+      <p class="meta">生效日期：2026 年 10 月 12 日</p>
+
+      <h2>一、适用范围</h2>
+      <p>本隐私政策适用于 iOS 应用「边打边译」及其键盘扩展（以下统称「本产品」）。同一款产品在海外 App Store 以英文名 <strong>TransBoard</strong> 发布。本产品由开发者独立开发并运营。</p>
+
+      <h2>二、总原则：不收集、不上传</h2>
+      <p class="lead">本产品是一款完全在本机运行的输入法与翻译工具。</p>
+      <ul>
+        <li>主 App 与键盘扩展<strong>均不发起任何网络请求</strong>；</li>
+        <li>没有账号体系，无需注册或登录；</li>
+        <li>不接入任何广告、统计分析或崩溃收集类第三方 SDK；</li>
+        <li>不向任何第三方出售、共享或转让你的信息。</li>
+      </ul>
+
+      <h2>三、你在键盘中输入的内容</h2>
+      <div class="key">
+        <p>你输入的拼音、英文单词、候选词选择以及翻译文本，<strong>全部只在这台设备的内存中处理</strong>，随本次输入结束即释放，不会被记录、保存或上传。翻译在本机完成，输入内容不会离开本设备。</p>
+      </div>
+
+      <h2>四、仅保存在本机的数据</h2>
+      <p>以下数据只保存在你的设备本地，不会上传：</p>
+      <ul>
+        <li><strong>输入习惯词库</strong>：键盘记住你常选的词，用于后续优先显示；</li>
+        <li><strong>个性化设置</strong>：模糊音开关等你在 App 内所做的设置；</li>
+        <li><strong>译文缓存</strong>：用于避免重复翻译的临时缓存。</li>
+      </ul>
+      <p>存放位置：本机 App 沙盒，以及主 App 与键盘之间的共享容器（App Group）。<br>
+      删除方式：App 内「<strong>设置 → 输入习惯 → 清空用户词库</strong>」可随时清空；卸载本产品会一并删除上述全部本地数据。</p>
+
+      <h2>五、键盘「完全访问」权限</h2>
+      <p>iOS 要求第三方键盘在调用系统翻译服务、以及访问主 App 共享容器时必须开启「完全访问」。本产品使用该权限<strong>仅限两件事</strong>：一是调用系统端侧翻译服务；二是在设备本地读写本产品自己的共享容器（同步设置、缓存与词库）。由于本产品不发起任何网络请求，即便开启了完全访问，键盘也没有把数据外传的能力。</p>
+
+      <h2>六、翻译是如何完成的</h2>
+      <p>本产品使用 Apple 系统自带的端侧翻译框架完成翻译，翻译计算在本机进行。首次使用某个语言对时，系统可能提示你下载对应语言包，该下载由 iOS 系统负责，不受本产品控制，我们也无法获知其内容。</p>
+
+      <h2>七、我们不做的事</h2>
+      <ul>
+        <li>不收集位置、通讯录、照片、相机、麦克风、健康等任何系统数据；</li>
+        <li>不采集设备标识符用于跟踪；</li>
+        <li>不要求任何与功能无关的权限。</li>
+      </ul>
+
+      <h2>八、第三方开源组件</h2>
+      <p>本产品内置输入法内核等开源组件（如 Rime Input Method Engine / librime，BSD 3-Clause 许可），仅用于实现输入与翻译功能，这些组件不包含任何数据收集行为。相关开源许可与署名见 App 内「更多 → 关于」及随附的第三方许可声明。</p>
+
+      <h2>九、儿童隐私</h2>
+      <p>本产品不面向儿童单独设计，也不会收集儿童的任何个人信息（事实上本产品不收集任何个人信息）。</p>
+
+      <h2>十、政策变更</h2>
+      <p>若本政策发生变更，我们会在本页面更新内容并同步修改生效日期，重大变更会在 App 内提示。</p>
+
+      <h2>十一、联系我们</h2>
+      <p>如对本隐私政策有任何疑问，请联系：<a href="mailto:2013699979@qq.com">2013699979@qq.com</a></p>
+    </section>
+
+    <!-- ==================== English ==================== -->
+    <section class="doc" id="doc-en" hidden>
+      <p class="meta">Effective date: October 12, 2026</p>
+
+      <h2>1. Scope</h2>
+      <p>This Privacy Policy applies to the iOS app <strong>TransBoard</strong> and its keyboard extension (together, the “App”). The same product is published on the App Store under the name <strong>边打边译</strong> (BianDaBianYi). The App is independently developed and operated by its developer.</p>
+
+      <h2>2. Our principle: we do not collect or upload anything</h2>
+      <p class="lead">TransBoard is an input-method and translation tool that runs entirely on your device.</p>
+      <ul>
+        <li>The main app and the keyboard extension <strong>make no network requests</strong>;</li>
+        <li>There is no account system — no sign-up or login;</li>
+        <li>No advertising, analytics, or crash-reporting SDK is integrated;</li>
+        <li>We never sell, share, or transfer your information to any third party.</li>
+      </ul>
+
+      <h2>3. What you type</h2>
+      <div class="key">
+        <p>Everything you type — pinyin, English words, candidate selections, and translated text — is <strong>processed only in your device’s memory</strong> and released as soon as the input session ends. It is never logged, stored, or uploaded. Translation is performed on-device, so your input never leaves your device.</p>
+      </div>
+
+      <h2>4. Data stored only on your device</h2>
+      <p>The following data is stored locally on your device only, and is never uploaded:</p>
+      <ul>
+        <li><strong>Learning dictionary</strong> — words you frequently select, used to rank suggestions;</li>
+        <li><strong>Preferences</strong> — settings such as fuzzy-pinyin toggles;</li>
+        <li><strong>Translation cache</strong> — a temporary cache that avoids repeated translations.</li>
+      </ul>
+      <p>Location: your device’s app sandbox and the shared container (App Group) between the app and the keyboard.<br>
+      Deletion: you can clear the learning dictionary anytime via <strong>Settings → Typing Habits → Clear user dictionary</strong> in the app; uninstalling the App deletes all of the above local data.</p>
+
+      <h2>5. The keyboard’s “Full Access” permission</h2>
+      <p>iOS requires third-party keyboards to enable “Full Access” in order to call the system translation service and to access the host app’s shared container. The App uses this permission for <strong>two things only</strong>: (1) calling the system’s on-device translation service, and (2) reading and writing the App’s own shared container locally (settings, cache, and dictionary). Because the App makes no network requests, the keyboard has no ability to transmit data even with Full Access enabled.</p>
+
+      <h2>6. How translation works</h2>
+      <p>Translation uses Apple’s on-device translation framework and is computed on your device. The first time you use a particular language pair, iOS may prompt you to download the corresponding language pack. That download is handled by iOS and is outside our control; we have no visibility into its contents.</p>
+
+      <h2>7. What we never do</h2>
+      <ul>
+        <li>We do not collect location, contacts, photos, camera, microphone, health, or any other system data;</li>
+        <li>We do not collect device identifiers for tracking;</li>
+        <li>We do not request any permission unrelated to the App’s features.</li>
+      </ul>
+
+      <h2>8. Third-party open-source components</h2>
+      <p>The App bundles open-source components for the input engine (e.g., Rime Input Method Engine / librime, BSD 3-Clause License), used solely to provide typing and translation features. These components contain no data-collection behavior. Licenses and attributions are available in the app under “More → About” and in the bundled third-party notices.</p>
+
+      <h2>9. Children’s privacy</h2>
+      <p>The App is not designed specifically for children and does not knowingly collect any personal information from children — in fact, the App collects no personal information at all.</p>
+
+      <h2>10. Changes to this policy</h2>
+      <p>If this policy changes, we will update this page and revise the effective date accordingly; material changes will be noted inside the App.</p>
+
+      <h2>11. Contact us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact: <a href="mailto:2013699979@qq.com">2013699979@qq.com</a></p>
+    </section>
+  </main>
+
+  <footer>© 2026 边打边译 / TransBoard · 全部处理在本机完成 · All processing stays on your device</footer>
+</div>
+
+<script>
+  function setLang(l){
+    var zh = document.getElementById('doc-zh'),
+        en = document.getElementById('doc-en');
+    var isZh = (l === 'zh');
+    zh.hidden = !isZh;
+    en.hidden = isZh;
+    document.getElementById('btn-zh').setAttribute('aria-pressed', isZh ? 'true' : 'false');
+    document.getElementById('btn-en').setAttribute('aria-pressed', isZh ? 'false' : 'true');
+    document.documentElement.lang = isZh ? 'zh-CN' : 'en';
+  }
+</script>
+</body>
+</html>
